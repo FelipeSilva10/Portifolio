@@ -175,13 +175,13 @@ button:focus-visible {
 .profile-mark {
   position: relative;
   display: block;
-  width: 88px;
-  height: 88px;
-  margin-bottom: 16px;
+  width: clamp(132px, 14vw, 164px);
+  aspect-ratio: 4 / 5;
+  margin-bottom: 18px;
   overflow: hidden;
   background: var(--green-dark);
-  border: 2px solid #e5e4cf;
-  box-shadow: 3px 3px 0 var(--line);
+  border: 3px solid #e5e4cf;
+  box-shadow: 4px 4px 0 var(--line);
 }
 
 .profile-mark img {
@@ -189,7 +189,7 @@ button:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 22%;
+  object-position: center;
 }
 
 .panel-kicker,
@@ -1144,10 +1144,9 @@ button:focus-visible {
   }
 
   .profile-mark {
-    width: 74px;
-    height: 74px;
-    margin-bottom: 12px;
-    box-shadow: 2px 2px 0 var(--line);
+    width: 118px;
+    margin-bottom: 14px;
+    box-shadow: 3px 3px 0 var(--line);
   }
 
   .profile-card h1 {
